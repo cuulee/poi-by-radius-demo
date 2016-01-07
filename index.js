@@ -64,6 +64,9 @@ var map = new mapboxgl.Map({
 });
 
 map.scrollZoom.disable();
+map.addControl(new mapboxgl.Navigation({
+  position: 'top-right'
+}));
 
 function addData() {
   map.addSource('geojson', {
