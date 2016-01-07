@@ -63,6 +63,8 @@ var map = new mapboxgl.Map({
   maxBounds: bounds
 });
 
+map.scrollZoom.disable();
+
 function addData() {
   map.addSource('geojson', {
     'type': 'geojson',
